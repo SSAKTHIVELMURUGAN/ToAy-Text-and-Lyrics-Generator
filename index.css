@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #202020;
+    padding: 10px 20px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.auth-icons {
+    font-size: 24px;
+}
+
+main {
+    flex: 1;
+    background-color: #282828;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #FFF;
+}
+
+.tagline {
+    margin-bottom: 20px;
+    color: #AAA;
+}
+
+.upload-area {
+    border: 2px dashed #555;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-icon {
+    font-size: 48px;
+    color: #555;
+}
+
+.upload-instructions {
+    color: #AAA;
+}
+
+footer {
+    background-color: #202020;
+    color: #AAA;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    header .logo, footer p {
+        text-align: center;
+    }
+}
+
+/* New CSS for start button, stop button, and text box */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    resize: vertical;
+}
+
