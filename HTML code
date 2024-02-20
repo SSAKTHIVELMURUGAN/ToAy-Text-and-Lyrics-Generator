@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToAy - Song Lyrics Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ToAy</div>
+            <div class="auth-icons">
+                <i class="fas fa-user-circle"></i> <!-- This is an example icon for user authentication -->
+            </div>
+        </header>
+        <main>
+            <h2>Generate Lyrics for Your Songs</h2>
+            <p class="tagline">Your one-stop destination to create lyrics for your music!</p>
+            <div class="upload-area">
+                <input type="file" id="file-upload" hidden />
+                <label for="file-upload" class="upload-box">
+                    <div class="plus-icon">+</div>
+                    <div class="upload-instructions">Upload your file</div>
+                </label>
+            </div>
+            <button id="startButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <textarea id="transcription" class="text-box" rows="5" placeholder="Transcribed text will appear here..." readonly></textarea>
+        </main>
+        <footer>
+            <p>Basic Requirements: Web browser, Internet connection</p>
+        </footer>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
